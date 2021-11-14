@@ -1,0 +1,25 @@
+<div class="main">
+    <img src="../../assets/search.png"/>
+</div>
+
+<form >
+    <div class="inputField">
+        <input [(ngModel)]="Bookname" value="" name="Bookname"
+        placeholder="Search for books" type="text">
+    </div>
+    <button  type="button" (click)="GetBooks('intitle')">Search by Title</button>
+    <button  type="button" (click)="GetBooks('inauthor')">Search by Author</button>
+
+</form>
+
+<div class="container">
+<div class="mainContainer" *ngFor="let book of Books">
+    <div class="card">
+       <img   src="{{book.volumeInfo.imageLinks?.thumbnail}}"  alt="http://smartmobilestudio.com/wp-content/uploads/2012/06/leather-book-preview.png"/>
+        <h3>{{book.volumeInfo.title}}</h3>
+        <h4>{{book.volumeInfo.authors}}</h4>
+    </div>
+
+</div>
+
+</div>

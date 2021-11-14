@@ -1,0 +1,39 @@
+header{
+  margin-left: 20px  ;
+}
+header ul{
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 1em;
+  }
+  /* header ul:last-child{
+    float: right
+  } */
+  /* header ul li{
+    padding: 0 0.5em ;
+  } */
+  header ul li .main-page {
+    font-weight: bolder;
+    padding: 0.7em 1.2em;
+    background-color: transparent; 
+  }
+  header ul li .auth{
+    background-color: rgb(236, 73, 9);
+    color: white;
+    padding: 0.7em 2em;
+    text-transform: uppercase;
+  }
+  header ul li .auth , .main-page{
+    border: 0;
+    border-radius: 0.4em;
+  }
+  header ul li .auth:hover, .main-page:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+  }
+   img{
+    max-width: 70px;
+    /* left: 0; */
+    cursor: pointer;
+  }
